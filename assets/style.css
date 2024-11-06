@@ -1,0 +1,166 @@
+html {
+    font-family: Roboto, 'sans-serif';
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 0 3rem 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: underline;
+    color: #000000;
+    font-size: 0.875rem;
+}
+
+header {
+    background: #F6F6F6;
+    padding: 0.75rem 1.5rem;
+    height: 2rem;
+}
+
+header .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2E51A2;
+}
+
+.mobile-nav {
+    background: #2E51A2;
+    padding: 6px 1rem;
+    width: 100vw;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+main {
+    /*height: calc(100vh - 19rem);*/
+    padding: 1rem 1rem 2rem;
+}
+
+.main-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.anime-item__link img{
+    width: 100%;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+footer {
+    background: #F6F6F6;
+    padding: 1rem 3rem;
+}
+
+footer .top-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 14px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.news-item {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.news-item__preview img {
+    height: 100%;
+}
+
+.news-item__content {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h4.news-item__title {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.news-item__info {
+    color: #9A9A9A;
+    font-size: 0.5rem;
+}
+
+.discussion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.discussion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #2E51A2;
+}
+
+.discussion-item__title {
+    font-size: 0.875rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.discussion-item__info {
+    color: #9A9A9A;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discussion-item__replies {
+    display: flex;
+    gap: 0.5rem;
+}
