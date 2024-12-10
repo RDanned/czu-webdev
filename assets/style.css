@@ -59,7 +59,7 @@ header {
 header .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #FF6500;
+    color: var(--primaryColor);
 }
 
 @media screen and (min-width: 768px) {
@@ -117,7 +117,7 @@ header .logo {
 }
 
 .homepage .more-btn {
-    background: #FF6500;
+    background: var(--primaryColor);
     padding: 0.25rem 1rem;
     border-radius: 0.75rem;
 }
@@ -131,7 +131,6 @@ header .logo {
 }
 
 main {
-    /*height: calc(100vh - 19rem);*/
     padding: 1rem 1rem 2rem;
 
     display: grid;
@@ -144,7 +143,7 @@ main {
     grid-template-columns: 1fr;
 
 
-    gap: 16px;
+    gap: 1rem;
 }
 
 .anime-grid {
@@ -185,8 +184,8 @@ main {
 
 .most-recent-block {
     grid-area: most-recent-anime;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .most-recent-block .anime-grid .anime-item__link {
@@ -202,8 +201,8 @@ main {
 
 .fall-2024-block {
     grid-area: fall-anime;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .fall-2024-block .anime-grid {
@@ -222,20 +221,20 @@ main {
 
 .new-episodes-block {
     grid-area: new-episodes;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .latest-news-block {
     grid-area: latest-news;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .discussions-block {
     grid-area: discussions;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -299,7 +298,7 @@ footer .footer-nav ul {
 footer .copyright {
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -353,7 +352,7 @@ footer .copyright {
 }
 
 .news-item__info {
-    color: #FF8636;
+    color: var(--secondaryColor);
     font-size: 0.75rem;
 }
 
@@ -368,7 +367,7 @@ footer .copyright {
     flex-direction: column;
     gap: 0.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #FF6500;
+    border-bottom: 1px solid var(--primaryColor);
 }
 
 .discussion-item__title {
@@ -377,7 +376,7 @@ footer .copyright {
 }
 
 .discussion-item__info {
-    color: #FF8636;
+    color: var(--secondaryColor);
     font-size: 0.75rem;
     display: flex;
     justify-content: space-between;
@@ -427,18 +426,42 @@ footer .copyright {
     z-index: 1000;
 }
 
+.mobile-menu img {
+    width: 5rem;
+}
+
 .mobile-menu ul {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 .mobile-menu ul li {
     margin: 20px 0;
+    padding-left: 2rem;
 }
 
 .mobile-menu ul li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.mobile-menu .mobile-menu-delimiter {
+    background: var(--primaryColor);
+    height: 1px;
+    width: calc(100% - 2rem);
+    margin-top: 2.5rem;
+}
+
+.mobile-menu .sign-up-btn {
+    background: var(--primaryColor);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+}
+
+.mobile-menu .log-in-btn {
+    margin-top: 1rem;
 }
 
 .burger-menu-btn.active .line1 {
